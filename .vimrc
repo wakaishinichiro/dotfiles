@@ -5,7 +5,7 @@ if has('vim_starting')
   set nocompatible               " Be iMproved
 
   " Required:
-  set runtimepath+=~/.vim/bundle/_neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 let neobundle_readme=expand('~/.vim/bundle/neobundle.vim/README.md')
@@ -130,7 +130,7 @@ NeoBundle 'crusoexia/vim-monokai'
 
 "" statusline
 
-NeoBundle 'litchyny/lightline.vim'
+NeoBundle 'itchyny/lightline.vim'
 
 "" HTML/CSS
 NeoBundle 'amirh/HTML-AutoCloseTag'
@@ -167,10 +167,14 @@ NeoBundle 'myhere/vim-nodejs-complete'
 NeoBundle 'rking/ag.vim'
 
 "" 所要時間確認
+<<<<<<< HEAD
 NeoBundle 'mattn/benchvimrc-vim.git'
 
 "" Vim Git
 NeoBundle 'tpope/vim-fugitive'
+
+"" どこが重いのかを調べる
+NeoBundle 'mattn/benchvimrc-vim'
 
 call neobundle#end()
 
