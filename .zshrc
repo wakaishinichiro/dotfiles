@@ -1,12 +1,18 @@
 ########################################
+
 # 環境変数
 export LANG=ja_JP.UTF-8
-export PROJECTS_ROOT=/Users/wakaishinichirou/dev/new_gcapps
-export NODE_PATH=/usr/local/lib/node_modules
+export PROJECTS_ROOT="$HOME/dev/new_gcapps"
+export NODE_PATH="$HOME/.nodebrew/current/lib/node_modules"
 
 export PATH="$HOME/.nodebrew/current/bin:$PATH"
 export MAMP=/Applications/MAMP/htdocs
-export AD=/Users/wakaishinichirou/dev/projects/
+export AD="$HOME/dev/projects/"
+
+# Python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # 色を使用出来るようにする
 autoload -Uz colors
@@ -450,3 +456,4 @@ fi
 if [ -f /Users/wakaishinichirou/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/wakaishinichirou/google-cloud-sdk/completion.zsh.inc'
 fi
+

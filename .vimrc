@@ -167,7 +167,10 @@ NeoBundle 'myhere/vim-nodejs-complete'
 NeoBundle 'rking/ag.vim'
 
 "" 所要時間確認
-NeoBundle 'git://github.com/mattn/benchvimrc-vim.git'
+NeoBundle 'mattn/benchvimrc-vim.git'
+
+"" Vim Git
+NeoBundle 'tpope/vim-fugitive'
 
 call neobundle#end()
 
