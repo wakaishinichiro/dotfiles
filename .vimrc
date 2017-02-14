@@ -167,7 +167,6 @@ NeoBundle 'myhere/vim-nodejs-complete'
 NeoBundle 'rking/ag.vim'
 
 "" 所要時間確認
-<<<<<<< HEAD
 NeoBundle 'mattn/benchvimrc-vim.git'
 
 "" Vim Git
