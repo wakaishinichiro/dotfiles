@@ -185,6 +185,39 @@ filetype plugin indent on
 NeoBundleCheck
 
 "*****************************************************************************
+"" vim-plug
+"*****************************************************************************"
+if has('vim_starting')
+  set rtp+=~/.vim/plugged/vim-plug
+  if !isdirectory(expand('~/.vim/plugged/vim-plug'))
+    echo 'install vim-plug...'
+    call system('mkdir -p ~/.vim/plugged/vim-plug')
+    call system('git clone https://github.com/junegunn/vim-plug.git ~/.vim/plugged/vim-plug/autoload')
+  end
+endif
+
+call plug#begin('~/.vim/plugged')
+
+" # vim-plugでのプラグイン記述
+call plug#begin('~/.vim/plugged')
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
+call plug#end()
+
+" # init.vim
+function! s:find_git_root()
+  return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+endfunction
+
+command! ProjectFiles execute 'Files' s:find_git_root()
+
+nnoremap <silent> <C-@> :ProjectFiles<CR>
+nnoremap <silent> <M-p> :History<CR>
+nnoremap <silent> <C-\> :FZF!<CR>
+
+call plug#end()
+
+"*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
 let mapleader="\<Space>"

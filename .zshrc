@@ -244,6 +244,7 @@ alias xcode_clean='rm -rf ~/Library/Developer/Xcode/DerivedData'
 alias curl='curl -C - '
 alias reload_zsh='source ~/.zshrc'
 alias fuck='$(thefuck $(fc -ln -1))'
+alias dc='docker-compose'
 
 alias '..'='cd ..'
 alias -g ...='../..'
@@ -447,13 +448,9 @@ alias ctags=/usr/local/Cellar/ctags/5.8_1/bin/ctags
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/wakaishinichirou/google-cloud-sdk/path.zsh.inc ]; then
-  source '/Users/wakaishinichirou/google-cloud-sdk/path.zsh.inc'
-fi
+source '/Users/wakaishinichirou/google-cloud-sdk/path.zsh.inc'
 
-# The next line enables shell command completion for gcloud.
-if [ -f /Users/wakaishinichirou/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/Users/wakaishinichirou/google-cloud-sdk/completion.zsh.inc'
-fi
-
+# The next line enables bash completion for gcloud.
+source '/Users/wakaishinichirou/google-cloud-sdk/completion.zsh.inc'
