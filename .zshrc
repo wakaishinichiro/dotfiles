@@ -245,6 +245,7 @@ alias curl='curl -C - '
 alias reload_zsh='source ~/.zshrc'
 alias fuck='$(thefuck $(fc -ln -1))'
 alias dc='docker-compose'
+alias ds='sudo du -sh ./* | sort -nr'
 
 alias '..'='cd ..'
 alias -g ...='../..'
@@ -405,6 +406,9 @@ alias adbatch="MONGODB_HOST=172.17.8.101 TASK_NAME=job-execute node index.js"
 
 # gcloud エイリアス
 alias gssh='sudo gcloud compute --project "sitest-147004" ssh --zone "asia-east1-a"'
+
+# Python エイリアス
+alias activate='$PYENV_ROOT/versions/anaconda3-4.0.0/envs/python2'
 
 # Ikejima Project
 alias movie:set='cd /usr/local/opt/figlet/share/figlet/fonts'
