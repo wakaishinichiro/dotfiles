@@ -404,14 +404,7 @@ alias sudo='sudo '
 alias -g L='| less'
 alias -g G='| grep'
 
-# SPAIA 関数
-function spaia (){ COMPILES_ON_REQUEST=yes TASK_NAME=serve MONGODB_HOST=gs-cms-single-mongo.japanwest.cloudapp.azure.com BASIC_AUTH=no PORT=$1 VERBOSE=yes POST_LIMIT=5 MONGODB_PORT=27017 MONGODB_DB=main node index.js }
-
-# GC-Ad エイリアス
 alias adbatch="MONGODB_HOST=172.17.8.101 TASK_NAME=job-execute node index.js"
-
-# gcloud エイリアス
-alias gssh='sudo gcloud compute --project "sitest-147004" ssh --zone "asia-east1-a"'
 
 # Python エイリアス
 alias activate='$PYENV_ROOT/versions/anaconda3-4.0.0/envs/python2'
