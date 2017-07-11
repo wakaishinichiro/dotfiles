@@ -9,6 +9,12 @@ export PATH="$HOME/.nodebrew/current/bin:$PATH"
 export MAMP=/Applications/MAMP/htdocs
 export AD="$HOME/dev/projects/"
 
+export APP="$HOME/dev/new_gcapps/gcapps-app"
+export API="$HOME/dev/new_gcapps/gcapps-api"
+export CORP="$HOME/dev/new_gcapps/gcapps-corp"
+export SQL="$HOME/dev/new_gcapps/gcapps-mysql"
+export STAT="$HOME/dev/new_gcapps/gcapps-stats"
+
 # Python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -454,7 +460,7 @@ alias ctags=/usr/local/Cellar/ctags/5.8_1/bin/ctags
 
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/wakaishinichirou/google-cloud-sdk/path.zsh.inc'
+source '$HOME/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables bash completion for gcloud.
-source '/Users/wakaishinichirou/google-cloud-sdk/completion.zsh.inc'
+source '$HOME/google-cloud-sdk/completion.zsh.inc'

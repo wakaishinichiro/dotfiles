@@ -67,14 +67,14 @@ NeoBundle 'scrooloose/nerdtree'
 
 "" vimproc
 NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make -f make_mac.mak',
-\     'linux' : 'make -f make_mac.mak',
-\     'unix' : 'gmake -f make_mac.mak',
-\    },
-\ }
+    \ 'build' : {
+    \     'windows' : 'tools\\update-dll-mingw',
+    \     'cygwin' : 'make -f make_cygwin.mak',
+    \     'mac' : 'make -f make_mac.mak',
+    \     'linux' : 'make -f make_mac.mak',
+    \     'unix' : 'gmake -f make_mac.mak',
+    \    },
+    \ }
 
 "" 補完
 if s:meet_neocomplete_requirements()
